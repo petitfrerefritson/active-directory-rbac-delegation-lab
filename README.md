@@ -2,18 +2,16 @@
 
 ## Overview
 
-This project demonstrates the implementation of enterprise Role-Based Access Control (RBAC) within Active Directory using:
-
-<br>
+This project demonstrates the implementation of enterprise Role-Based Access Control (RBAC) within Active Directory.
 
 
+## Business Problem
 
-- [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
-- [OU Design](docs/02-ou-design.md)
-- [RDP Authorization Implementation](docs/03-rdp-rbac-implementation.md)
-- [Validation Testing](docs/04-validation.md)
-- [Troubleshooting](docs/05-troubleshooting.md)
-- [Lessons Learned](docs/06-lessons-learned.md)
+In many organizations, permissions are assigned directly to users, creating administrative overhead, inconsistent access controls, and increased risk of permission creep.
+
+This project demonstrates how Role-Based Access Control (RBAC) can be implemented in Active Directory using Microsoft's AGDLP methodology to provide scalable, auditable, and least-privilege access management.
+
+The lab specifically focuses on controlling Remote Desktop access to standard and privileged workstations while maintaining clear separation between identity, policy, and permissions
 
 <br>
 The objective was to create a scalable and secure permission model that separates identity, policy, and authorization while following least privilege principles.
@@ -28,15 +26,12 @@ The objective was to create a scalable and secure permission model that separate
 
 <br>
 <br>
+
 <br>
 
-## Business Problem
-
-In many organizations, permissions are assigned directly to users, creating administrative overhead, inconsistent access controls, and increased risk of permission creep.
-
-This project demonstrates how Role-Based Access Control (RBAC) can be implemented in Active Directory using Microsoft's AGDLP methodology to provide scalable, auditable, and least-privilege access management.
-
-The lab specifically focuses on controlling Remote Desktop access to standard and privileged workstations while maintaining clear separation between identity, policy, and permissions
+<p align="center">
+<img src="screenshots/Active Directory RBAC architecture overview.png" align="center">
+</p>
 
 <br>
 
@@ -57,6 +52,31 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 <br>
 <br>
 
+### Validation Results
+
+<br>
+
+| Test | Expected Result | Outcome|
+|------|-----------------|--------|
+| Helpdesk → WS-TEST01 | RDP Allowed | PASS |
+| Helpdesk → MGMT01 | RDP Denied | PASS |
+| Infra Admin → WS-TEST01 | RDP Allowed | PASS |
+| Infra Admin → MGMT01 | RDP Allowed | PASS |
+| Remove Group Membership | Access Revoked | PASS |
+
+<br>
+
+## Project Documentation
+
+- [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
+- [OU Design](docs/02-ou-design.md)
+- [RDP Authorization Implementation](docs/03-rdp-rbac-implementation.md)
+- [Validation Testing](docs/04-validation.md)
+- [Troubleshooting](docs/05-troubleshooting.md)
+- [Lessons Learned](docs/06-lessons-learned.md)
+
+<br>
+
 ### Technologies Used
 
 - Windows Server 2025
@@ -72,15 +92,6 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 <br>
 
 ### Architecture
-<br>
-
-<p>
-<img src="/screenshots/Active Directory RBAC architecture overview.png" align="center">
-</p>
-
-<br>
-
-## Architecture Highlights
 
 <br>
 
@@ -121,20 +132,6 @@ Permission
 ↓
 Resource
 ```
-
-<br>
-
-### Validation Results
-
-<br>
-
-| Test | Expected Result | Outcome|
-|------|-----------------|--------|
-| Helpdesk → WS-TEST01 | RDP Allowed | PASS |
-| Helpdesk → MGMT01 | RDP Denied | PASS |
-| Infra Admin → WS-TEST01 | RDP Allowed | PASS |
-| Infra Admin → MGMT01 | RDP Allowed | PASS |
-| Remove Group Membership | Access Revoked | PASS |
 
 <br>
 
