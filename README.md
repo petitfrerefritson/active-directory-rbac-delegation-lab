@@ -35,6 +35,20 @@ The objective was to create a scalable and secure permission model that separate
 
 <br>
 
+## Project Outcomes
+
+Successfully implemented:
+
+- RBAC using AGDLP
+- Administrative workstation isolation
+- Role-based RDP authorization
+- Group Policy controlled access
+- Least privilege enforcement
+
+Validated through functional testing and group membership removal.
+
+<br>
+
 ## Lab Environment
 
 | Component | Technology |
@@ -63,6 +77,11 @@ The objective was to create a scalable and secure permission model that separate
 | Infra Admin → WS-TEST01 | RDP Allowed | PASS |
 | Infra Admin → MGMT01 | RDP Allowed | PASS |
 | Remove Group Membership | Access Revoked | PASS |
+
+<br>
+
+
+Implementation Screenshots
 
 <br>
 
