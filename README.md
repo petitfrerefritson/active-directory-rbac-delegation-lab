@@ -180,20 +180,6 @@ Resource
 
 <br>
 
-### Project Documentation
-
-<br>
-
-
-- RBAC Fundamentals
-- OU Design
-- RDP Authorization Implementation
-- Validation Testing
-- Troubleshooting
-- Lessons Learned
-
-<br>
-
 ### Skills Demonstrated
 <br>
 
