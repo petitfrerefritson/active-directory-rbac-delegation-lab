@@ -128,7 +128,7 @@ Resource
             <b>Standard Workstations OU</b>
         </td>
         <td align="center">
-            <img src="screenshots/ADMWorkstationOU.png" width="450" >
+            <img src="screenshots/ADM Workstation OU.png" width="450" >
             <b>Admin Workstations OU</b>
         <td>
     <tr>
