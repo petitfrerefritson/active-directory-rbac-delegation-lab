@@ -5,6 +5,7 @@
 This project demonstrates the implementation of enterprise Role-Based Access Control (RBAC) within Active Directory using:
 
 <br>
+<br>
 
 
 
@@ -14,10 +15,13 @@ This project demonstrates the implementation of enterprise Role-Based Access Con
 - [Validation Testing](docs/04-validation.md)
 - [Troubleshooting](docs/05-troubleshooting.md)
 - [Lessons Learned](docs/06-lessons-learned.md)
+
+<br>
 <br>
 
 The objective was to create a scalable and secure permission model that separates identity, policy, and authorization while following least privilege principles.
 
+<br>
 <br>
 
 ![Windows Server](https://img.shields.io/badge/Windows%20Server-2025-blue)
@@ -25,11 +29,14 @@ The objective was to create a scalable and secure permission model that separate
 ![Group Policy](https://img.shields.io/badge/Group%20Policy-GPO-purple)
 ![IAM](https://img.shields.io/badge/IAM-AGDLP-green)
 
+<br>
+<br>
 ---
 
 <br>
+<br>
 
-Business Problem
+## Business Problem
 
 In many organizations, permissions are assigned directly to users, creating administrative overhead, inconsistent access controls, and increased risk of permission creep.
 
@@ -37,6 +44,7 @@ This project demonstrates how Role-Based Access Control (RBAC) can be implemente
 
 The lab specifically focuses on controlling Remote Desktop access to standard and privileged workstations while maintaining clear separation between identity, policy, and permissions
 
+<br>
 <br
 
 ## Lab Environment
@@ -53,6 +61,8 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 | Access Model | AGDLP |
 | Authorization Method | Security Groups |
 
+<br>
+<br>
 
 ## Technologies Used
 
@@ -66,8 +76,11 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 - AGDLP
 
 ---
-
+<br>
+<br>
 ## Architecture
+
+<br>
 <br>
 
 <p>
@@ -75,9 +88,13 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 </p>
 
 <br>
-
-Architecture Highlights
 <br>
+
+## Architecture Highlights
+
+<br>
+<br>
+
 Organizational Units
 
 Workstations
@@ -86,15 +103,21 @@ Workstations
 │
 └── Admin Workstations
     └── MGMT01
+
 <br>
+
 Global Security Groups
 GG_HELPDESK
 GG_INFRA_ADMIN
+
 <br>
+
 Domain Local Groups
 DL_WORKSTATION_RDP
 DL_ADMIN_WORKSTATION_RDP
+
 <br>
+
 AGDLP Flow
 User
  ↓
@@ -105,9 +128,13 @@ Domain Local Group
 Permission
  ↓
 Resource
+
 <br>
+
 Validation Results
+
 <br>
+
 | Test | Expected Result | Outcome|
 |------|-----------------|--------|
 | Helpdesk → WS-TEST01 | RDP Allowed | PASS |
@@ -115,17 +142,20 @@ Validation Results
 | Infra Admin → WS-TEST01 | RDP Allowed | PASS |
 | Infra Admin → MGMT01 | RDP Allowed | PASS |
 | Remove Group Membership | Access Revoked | PASS |
+
 <br>
 
-Key Lessons Learned
+## Key Lessons Learned
+
 <br>
-OUs organize policy, not permissions.
-Security Groups determine authorization.
-AGDLP creates scalable permission chains.
-Group Policy configuration and authorization should be separated.
-OU inheritance directly impacts GPO application.
-"Update" and "Replace" behave differently within Group Policy Preferences.
-Least privilege is easier to enforce when permissions are assigned through Domain Local groups.
+
+- OUs organize policy, not permissions.
+- Security Groups determine authorization.
+- AGDLP creates scalable permission chains.
+- Group Policy configuration and authorization should be separated.
+- OU inheritance directly impacts GPO application.
+- "Update" and "Replace" behave differently within Group Policy Preferences.
+- Least privilege is easier to enforce when permissions are assigned through Domain Local groups.
 
 ## Key Concepts
 
