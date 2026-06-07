@@ -136,7 +136,7 @@ Permissions should be assigned to groups, not users.
 
 # Organizational Units, Groups, Identity, Policy, and Permissions
 
-#### Overview
+### Overview
 
 One of the concepts that initially confused me while learning Active Directory was the relationship between Organizational Units (OUs) and Security Groups.
 
@@ -150,7 +150,7 @@ My first instinct was to create a separate Organizational Unit for every type of
 
 At first glance this seems logical, but it is actually a common design mistake.
 
-Understanding Organizational Units
+### Understanding Organizational Units
 
 An Organizational Unit (OU) is primarily used to apply administrative control and Group Policy settings to a collection of objects.
 
@@ -169,7 +169,7 @@ Examples of behavior controlled through OUs include:
 
 An OU does not determine what resources a user can access.
 
-Understanding Security Groups
+### Understanding Security Groups
 
 Security Groups answer a different question:
 
@@ -187,7 +187,7 @@ Examples include:
 
 Permissions should be assigned through groups, not OUs.
 
-The Common Mistake
+### The Common Mistake
 
 A common beginner design looks something like this:
 ```text
@@ -205,7 +205,7 @@ If every administrative account should receive the same hardening policies, ther
 
 You end up managing multiple OUs that all receive nearly identical Group Policy Objects (GPOs).
 
-A Better Design
+### A Better Design
 
 Instead, administrative accounts can be placed into a single administrative OU:
 ```text
@@ -229,11 +229,11 @@ Examples:
 - Administrative workstation requirements
 - Strong authentication requirements
 
-Separating Identity from Permissions
+### Separating Identity from Permissions
 
 The key lesson is understanding the difference between identity and permissions.
 
-Identity
+#### Identity
 
 Identity describes who the account represents.
 
@@ -247,7 +247,7 @@ These accounts are administrative identities.
 
 Because they are administrative identities, they belong in the same Admin Accounts OU and receive the same security policies.
 
-Permissions
+#### Permissions
 
 Permissions describe what the account is allowed to do.
 ```text
@@ -278,7 +278,7 @@ DL_SERVER_ADMIN
         ↓
 ```
 
-Windows Server Administration Rights
+### Windows Server Administration Rights
 
 The accounts can live in the same OU while having completely different permissions.
 
