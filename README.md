@@ -83,11 +83,9 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 </p>
 
 <br>
-<br>
 
 ### Architecture Highlights
 
-<br>
 <br>
 
 ### Organizational Units
