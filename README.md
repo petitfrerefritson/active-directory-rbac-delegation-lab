@@ -27,6 +27,23 @@ The objective was to create a scalable and secure permission model that separate
 <br>
 <br>
 
+
+## Table of Contents
+
+- [Business Problem](#business-problem)
+- [Architecture](#architecture)
+- [Project Outcomes](#project-outcomes)
+- [Lab Environment](#lab-environment)
+- [Validation Results](#validation-results)
+- [Organizational Unit Structure](#organizational-unit-structure)
+- [Security Group Design](#security-group-design)
+- [AGDLP Relationship](#agdlp-relationship)
+- [Project Documentation](#project-documentation)
+- [Key Concepts](#key-concepts)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Key Lessons Learned](#key-lessons-learned)
+
+
 <br>
 
 <p align="center">
