@@ -121,16 +121,19 @@ DL_ADMIN_WORKSTATION_RDP
 
 <br>
 
+```text
 AGDLP Flow
+
 User
- ↓
+↓
 Global Group
- ↓
+↓
 Domain Local Group
- ↓
+↓
 Permission
- ↓
+↓
 Resource
+```
 
 <br>
 
