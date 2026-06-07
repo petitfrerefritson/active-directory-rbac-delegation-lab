@@ -191,7 +191,7 @@ Resource
 
 <br>
 
-Resume Bullet
+#### Resume Bullet
 
 Designed and implemented enterprise Active Directory Role-Based Access Control (RBAC) using AGDLP, Organizational Units, Group Policy, delegated administration, and least-privilege principles to control Remote Desktop authorization across standard and privileged workstation tiers.
 
