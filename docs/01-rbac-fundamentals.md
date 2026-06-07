@@ -104,85 +104,109 @@ Remote Desktop Access
 ```
 This model provides a scalable and enterprise-friendly approach to access management.
 Validation
+
 To verify the RBAC configuration:
-    1. Create a test Help Desk user
-    2. Add the user to GG_Helpdesk
-    3. Confirm GG_Helpdesk is a member of DL_Workstation_RDP
-    4. Log in as the test user
-    5. Attempt to RDP to a workstation
-    6. Verify access is successful
+
+- 1. Create a test Help Desk user
+- 2. Add the user to GG_Helpdesk
+- 3. Confirm GG_Helpdesk is a member of DL_Workstation_RDP
+- 4. Log in as the test user
+- 5. Attempt to RDP to a workstation
+- 6. Verify access is successful
+
 Then:
-    1. Remove the user from GG_Helpdesk
-    2. Force group membership refresh
-    3. Attempt RDP again
-    4. Verify access is denied
+- 1. Remove the user from GG_Helpdesk
+- 2. Force group membership refresh
+- 3. Attempt RDP again
+- 4. Verify access is denied
+
 This confirms permissions are being inherited through group membership rather than direct assignment.
 
 Key Takeaways
-    • Permissions should be assigned to groups, not users.
-    • Global Groups represent job roles.
-    • Domain Local Groups represent resource permissions.
-    • AGDLP creates a clear and scalable chain of trust.
-    • RBAC simplifies administration, auditing, and access reviews.
-    • Enterprise environments rely heavily on group-based access management to reduce complexity and improve security.
+
+Permissions should be assigned to groups, not users.
+- Global Groups represent job roles.
+- Domain Local Groups represent resource permissions.
+- AGDLP creates a clear and scalable chain of trust.
+- RBAC simplifies administration, auditing, and access reviews.
+- Enterprise environments rely heavily on group-based access management to reduce complexity and improve security.
 
 
 
 # Organizational Units, Groups, Identity, Policy, and Permissions
 
-Overview
+#### Overview
+
 One of the concepts that initially confused me while learning Active Directory was the relationship between Organizational Units (OUs) and Security Groups.
+
 My first instinct was to create a separate Organizational Unit for every type of administrator account:
-    • Infrastructure Admins
-    • Server Admins
-    • Security Admins
-    • Virtualization Admins
-    • Help Desk Admins
+
+- Infrastructure Admins
+- Server Admins
+- Security Admins
+- Virtualization Admins
+- Help Desk Admins
+
 At first glance this seems logical, but it is actually a common design mistake.
 
 Understanding Organizational Units
+
 An Organizational Unit (OU) is primarily used to apply administrative control and Group Policy settings to a collection of objects.
+
 In simple terms, an OU answers the question:
 "How should these accounts behave?"
+
 Examples of behavior controlled through OUs include:
-    • Password policies
-    • Administrative templates
-    • Security restrictions
-    • Logon restrictions
-    • Software deployment
-    • Certificate enrollment
-    • Desktop settings
-    • Windows Update settings
+- Password policies
+- Administrative templates
+- Security restrictions
+- Logon restrictions
+- Software deployment
+- Certificate enrollment
+- Desktop settings
+- Windows Update settings
+
 An OU does not determine what resources a user can access.
 
 Understanding Security Groups
+
 Security Groups answer a different question:
+
 "What resources should these accounts be allowed to access?"
+
 Examples include:
-    • Access to file shares
-    • Local administrator rights
-    • Remote Desktop access
-    • VMware administration
-    • Proxmox administration
-    • Network equipment administration
-    • Password reset permissions
-    • Certificate Authority management
+- Access to file shares
+- Local administrator rights
+- Remote Desktop access
+- VMware administration
+- Proxmox administration
+- Network equipment administration
+- Password reset permissions
+- Certificate Authority management
+
 Permissions should be assigned through groups, not OUs.
 
 The Common Mistake
+
 A common beginner design looks something like this:
+
 Admins
 ├── Infrastructure Admins OU
 ├── Server Admins OU
 ├── Security Admins OU
 ├── VM Admins OU
 └── Help Desk Admins OU
+
 This structure often creates unnecessary complexity.
+
 If every administrative account should receive the same hardening policies, there is little benefit in creating multiple OUs simply because the administrators perform different jobs.
+
 You end up managing multiple OUs that all receive nearly identical Group Policy Objects (GPOs).
 
 A Better Design
+
 Instead, administrative accounts can be placed into a single administrative OU:
+
 User Accounts
 │
 └── Admin Accounts
@@ -191,28 +215,39 @@ User Accounts
     ├── fritson.security
     ├── fritson.vm
     └── fritson.helpdesk
+
 The OU applies the security controls and hardening policies appropriate for administrative accounts.
+
 Examples:
-    • Deny web browsing
-    • Restrict software installation
-    • Enhanced auditing
-    • Credential protection
-    • Administrative workstation requirements
-    • Strong authentication requirements
+- Deny web browsing
+- Restrict software installation
+- Enhanced auditing
+- Credential protection
+- Administrative workstation requirements
+- Strong authentication requirements
 
 Separating Identity from Permissions
+
 The key lesson is understanding the difference between identity and permissions.
+
 Identity
+
 Identity describes who the account represents.
+
 Examples:
-    • fritson.infra
-    • fritson.server
-    • fritson.security
-    • fritson.vm
+- fritson.infra
+- fritson.server
+- fritson.security
+- fritson.vm
+
 These accounts are administrative identities.
+
 Because they are administrative identities, they belong in the same Admin Accounts OU and receive the same security policies.
+
 Permissions
+
 Permissions describe what the account is allowed to do.
+
 Examples:
     • GG_INFRA_ADMIN
     • GG_SERVER_ADMIN
