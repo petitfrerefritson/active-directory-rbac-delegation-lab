@@ -95,11 +95,11 @@ A → G → DL → P
 Example
 
 Fritson
-    ↓
+↓
 GG_Helpdesk
-    ↓
+↓
 DL_Workstation_RDP
-    ↓
+↓
 Remote Desktop Access
 
 This model provides a scalable and enterprise-friendly approach to access management.
