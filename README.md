@@ -97,11 +97,13 @@ Workstations
 ```
 <table>
     <tr>
-        <td>
-            <img src="screenshots/STD Workstation OU.png" width="500">
+        <td align="center">
+            <img src="screenshots/STD Workstation OU.png" width="450">
+            <b>Standard Workstations OU</b>
         </td>
-        <td>
-            <img src="screenshots/ADM Workstation OU.png" width="500" >
+        <td align="center">
+            <img src="screenshots/ADM Workstation OU.png" width="450" >
+            <b>Admin Workstations OU</b>
         <td>
     <tr>
 <table>
