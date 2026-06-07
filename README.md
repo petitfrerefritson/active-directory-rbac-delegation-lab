@@ -97,8 +97,8 @@ Workstations
 ```
 
 <p align="center">
-    <img src="screenshots/STD Workstation OU.png">
-    <img src="screenshots/ADM Workstation OU.png" >
+    <img src="screenshots/STD Workstation OU.png" width="900">
+    <img src="screenshots/ADM Workstation OU.png" width="900" >
  </p>
 
 
