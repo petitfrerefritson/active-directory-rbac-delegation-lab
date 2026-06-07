@@ -24,7 +24,7 @@ Problems with direct permission assignments include:
 
 Instead of assigning permissions directly to users, permissions are assigned to groups.
 
-Example Design
+<h4>Example Design</h4>
 
 Global Security Group
     • GG_Helpdesk
