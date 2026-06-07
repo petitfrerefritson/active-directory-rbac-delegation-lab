@@ -136,7 +136,7 @@ Resource
 
 <br>
 
-Validation Results
+### Validation Results
 
 <br>
 
@@ -166,6 +166,8 @@ Validation Results
 
 ### Key Concepts
 
+<br>
+
 - RBAC
 - AGDLP
 - Least Privilege
@@ -174,8 +176,12 @@ Validation Results
 - Delegated Administration
 
 ---
+<br>
 
 ### Project Documentation
+
+<br>
+
 
 - RBAC Fundamentals
 - OU Design
@@ -184,13 +190,18 @@ Validation Results
 - Troubleshooting
 - Lessons Learned
 
+<br>
 ---
+<br>
 
 ### Skills Demonstrated
 
+<br>
 - Active Directory Administration
 - Group Policy Management
 - RBAC Design
 - Access Control
 - Windows Administration
 - Troubleshooting
+
+<br>
