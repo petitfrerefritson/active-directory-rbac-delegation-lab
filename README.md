@@ -143,17 +143,6 @@ Resource
 
 <br>
 
-## Project Documentation
-
-- [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
-- [OU Design](docs/02-ou-design.md)
-- [RDP Authorization Implementation](docs/03-rdp-rbac-implementation.md)
-- [Validation Testing](docs/04-validation.md)
-- [Troubleshooting](docs/05-troubleshooting.md)
-- [Lessons Learned](docs/06-lessons-learned.md)
-
-<br>
-
 ### Technologies Used
 
 - Windows Server 2025
@@ -166,9 +155,15 @@ Resource
 - AGDLP
 
 <br>
-<br>
 
-### Architecture
+## Project Documentation
+
+- [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
+- [OU Design](docs/02-ou-design.md)
+- [RDP Authorization Implementation](docs/03-rdp-rbac-implementation.md)
+- [Validation Testing](docs/04-validation.md)
+- [Troubleshooting](docs/05-troubleshooting.md)
+- [Lessons Learned](docs/06-lessons-learned.md)
 
 <br>
 
