@@ -81,11 +81,10 @@ Validated through functional testing and group membership removal.
 <br>
 
 
-Implementation Screenshots
-
 ## Organizational Unit Structure
 
 The environment was organized using separate Organizational Units to distinguish standard workstations from privileged administrative workstations.
+
 
 ```text
 Workstations
@@ -94,6 +93,33 @@ Workstations
 │
 └── Admin Workstations
     └── MGMT01
+
+
+
+Global Security Groups:
+
+GG_HELPDESK
+GG_INFRA_ADMIN
+
+
+
+Domain Local Groups:
+
+DL_WORKSTATION_RDP
+DL_ADMIN_WORKSTATION_RDP
+
+
+AGDLP Flow
+
+User
+↓
+Global Group
+↓
+Domain Local Group
+↓
+Permission
+↓
+Resource
 ```
 <table>
     <tr>
@@ -143,46 +169,6 @@ Workstations
 <br>
 
 ### Architecture
-
-<br>
-
-### Organizational Units
-
-```text
-Workstations
-├── Standard
-│   └── WS-TEST01
-│
-└── Admin Workstations
-    └── MGMT01
-
-
-
-Global Security Groups:
-
-GG_HELPDESK
-GG_INFRA_ADMIN
-
-
-
-Domain Local Groups:
-
-DL_WORKSTATION_RDP
-DL_ADMIN_WORKSTATION_RDP
-
-
-AGDLP Flow
-
-User
-↓
-Global Group
-↓
-Domain Local Group
-↓
-Permission
-↓
-Resource
-```
 
 <br>
 
