@@ -143,6 +143,78 @@ Resource
 
 <br>
 
+
+## Security Group Design
+
+The environment uses separate Global and Domain Local security groups to maintain a scalable AGDLP permission model.
+
+---
+
+### Global Groups (Identity)
+
+Global Groups represent job roles and administrative responsibilities within the organization.
+
+| Group | Purpose |
+|---------|---------|
+| GG_HELPDESK | Password resets, account unlocks, user support |
+| GG_INFRA_ADMIN | Infrastructure administration |
+| GG_SECURITY_ADMIN | AD CS, NPS, PKI administration |
+| GG_SERVER_ADMIN | Server administration |
+| GG_VM_ADMIN | Proxmox administration |
+
+<br>
+
+<p align="center">
+<img src="./screenshots/global-groups.png" width="800">
+</p>
+
+<p align="center">
+<em>Global Security Groups representing organizational roles and responsibilities.</em>
+</p>
+
+---
+
+### Domain Local Groups (Permissions)
+
+Domain Local Groups own permissions and resource access assignments.
+
+| Group | Permission |
+|---------|---------|
+| DL_Workstation_RDP | RDP access to standard workstations |
+| DL_Admin_Workstation_RDP | RDP access to administrative workstations |
+| DL_Server_RDP | RDP access to servers |
+| DL_Server_Local_Admins | Local administrator rights on servers |
+
+<br>
+
+<p align="center">
+<img src="./screenshots/domain-local-groups.png" width="800">
+</p>
+
+<p align="center">
+<em>Domain Local Groups containing resource permissions and authorization assignments.</em>
+</p>
+
+---
+
+### AGDLP Relationship
+
+```text
+User
+ ↓
+Global Group (Role)
+ ↓
+Domain Local Group (Permission)
+ ↓
+Resource
+```
+
+This design separates identity from authorization and simplifies permission management at scale. Rather than assigning permissions directly to users, access is granted through Domain Local Groups while Global Groups represent business roles. This approach improves scalability, auditing, and long-term maintainability.
+
+<br>
+
+In this lab, GG_HELPDESK is nested into DL_Workstation_RDP, while GG_INFRA_ADMIN is nested into DL_Admin_Workstation_RDP, demonstrating how role-based access is delegated without assigning permissions directly to users.
+
 ## Technologies Used
 
 - Windows Server 2025
