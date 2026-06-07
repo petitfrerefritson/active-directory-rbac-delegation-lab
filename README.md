@@ -39,10 +39,9 @@ This project demonstrates how Role-Based Access Control (RBAC) can be implemente
 The lab specifically focuses on controlling Remote Desktop access to standard and privileged workstations while maintaining clear separation between identity, policy, and permissions
 
 <br>
-<br
 
 ### Lab Environment
-
+<br>
 
 
 | Component | Technology |
