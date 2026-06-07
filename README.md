@@ -68,9 +68,44 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 ---
 
 ## Architecture
+<br>
+
 <p>
 <img src="/screenshots/Active Directory RBAC architecture overview.png" align="center">
 </p>
+
+<br>
+
+Architecture Highlights
+Organizational Units
+Workstations
+├── Standard
+│   └── WS-TEST01
+│
+└── Admin Workstations
+    └── MGMT01
+Global Security Groups
+GG_HELPDESK
+GG_INFRA_ADMIN
+Domain Local Groups
+DL_WORKSTATION_RDP
+DL_ADMIN_WORKSTATION_RDP
+AGDLP Flow
+User
+ ↓
+Global Group
+ ↓
+Domain Local Group
+ ↓
+Permission
+ ↓
+Resource
+
+Validation Results
+
+| Test | Expected Result | Outcome
+|Helpdesk → WS-TEST01 | RDP Allowed | PASS
+
 
 
 ## Key Concepts
