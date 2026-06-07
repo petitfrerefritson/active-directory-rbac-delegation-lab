@@ -115,6 +115,7 @@ To verify the RBAC configuration:
 - 6. Verify access is successful
 
 Then:
+
 - 1. Remove the user from GG_Helpdesk
 - 2. Force group membership refresh
 - 3. Attempt RDP again
@@ -189,13 +190,14 @@ Permissions should be assigned through groups, not OUs.
 The Common Mistake
 
 A common beginner design looks something like this:
-
+```text
 Admins
 ├── Infrastructure Admins OU
 ├── Server Admins OU
 ├── Security Admins OU
 ├── VM Admins OU
 └── Help Desk Admins OU
+```
 
 This structure often creates unnecessary complexity.
 
@@ -206,7 +208,7 @@ You end up managing multiple OUs that all receive nearly identical Group Policy 
 A Better Design
 
 Instead, administrative accounts can be placed into a single administrative OU:
-
+```text
 User Accounts
 │
 └── Admin Accounts
@@ -215,6 +217,7 @@ User Accounts
     ├── fritson.security
     ├── fritson.vm
     └── fritson.helpdesk
+```
 
 The OU applies the security controls and hardening policies appropriate for administrative accounts.
 
@@ -247,14 +250,18 @@ Because they are administrative identities, they belong in the same Admin Accoun
 Permissions
 
 Permissions describe what the account is allowed to do.
-
+```text
 Examples:
     • GG_INFRA_ADMIN
     • GG_SERVER_ADMIN
     • GG_SECURITY_ADMIN
     • GG_VM_ADMIN
+```
+
 These groups determine access to resources.
+
 For example:
+```text
 fritson.infra
         ↓
 GG_INFRA_ADMIN
@@ -269,31 +276,39 @@ GG_SERVER_ADMIN
         ↓
 DL_SERVER_ADMIN
         ↓
+```
+
 Windows Server Administration Rights
+
 The accounts can live in the same OU while having completely different permissions.
 
 Mental Model
 A useful way to think about Active Directory is:
 Organizational Units
 Determine:
-    • Policy
-    • Management
-    • Delegation
-    • Behavior
+- Policy
+- Management
+- Delegation
+- Behavior
+
 Security Groups
+
 Determine:
-    • Access
-    • Permissions
-    • Resource Authorization
+- Access
+- Permissions
+- Resource Authorization
 
 Key Takeaways
-    • OUs control how an account behaves.
-    • Groups control what an account can access.
-    • OUs should be organized around policy requirements.
-    • Security Groups should be organized around job roles and permissions.
-    • Multiple admin accounts can reside in the same Admin Accounts OU while having different permissions.
-    • The question for an OU is:
+- OUs control how an account behaves.
+- Groups control what an account can access.
+- OUs should be organized around policy requirements.
+- Security Groups should be organized around job roles and permissions.
+- Multiple admin accounts can reside in the same Admin Accounts OU while having different permissions.
+- The question for an OU is:
+
 "What policies should apply to this account?"
-    • The question for a Security Group is:
+- The question for a Security Group is:
+
 "What permissions should this account have?"
+
 Understanding this distinction is one of the most important concepts in Active Directory design and helps prevent overly complicated OU structures.
