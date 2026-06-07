@@ -104,6 +104,7 @@ Resource
 Validation Results
 
 | Test | Expected Result | Outcome|
+|------|-----------------|--------|
 |Helpdesk → WS-TEST01 | RDP Allowed | PASS|
 
 
