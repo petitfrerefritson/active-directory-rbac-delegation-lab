@@ -95,14 +95,16 @@ Workstations
 └── Admin Workstations
     └── MGMT01
 ```
-
-<p align="left">
-    <img src="screenshots/STD Workstation OU.png" width="700">
-</p>
-<p>
-    <img src="screenshots/ADM Workstation OU.png" width="700" >
- </p>
-
+<table>
+    <tr>
+        <td>
+            <img src="screenshots/STD Workstation OU.png" width="500">
+        </td>
+        <td>
+            <img src="screenshots/ADM Workstation OU.png" width="500" >
+        <td>
+    <tr>
+<table>
 
 <br>
 
