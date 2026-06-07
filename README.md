@@ -30,7 +30,7 @@ The objective was to create a scalable and secure permission model that separate
 <br>
 <br>
 
-### Business Problem
+## Business Problem
 
 In many organizations, permissions are assigned directly to users, creating administrative overhead, inconsistent access controls, and increased risk of permission creep.
 
