@@ -11,7 +11,7 @@ In many organizations, permissions are assigned directly to users, creating admi
 
 This project demonstrates how Role-Based Access Control (RBAC) can be implemented in Active Directory using Microsoft's AGDLP methodology to provide scalable, auditable, and least-privilege access management.
 
-The lab specifically focuses on controlling Remote Desktop access to standard and privileged workstations while maintaining clear separation between identity, policy, and permissions
+The lab specifically focuses on controlling Remote Desktop access to standard and privileged workstations while maintaining clear separation between identity, policy, and permissions.
 
 <br>
 The objective was to create a scalable and secure permission model that separates identity, policy, and authorization while following least privilege principles.
