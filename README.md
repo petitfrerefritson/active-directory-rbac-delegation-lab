@@ -143,7 +143,7 @@ Resource
 
 <br>
 
-### Technologies Used
+## Technologies Used
 
 - Windows Server 2025
 - Active Directory Domain Services
