@@ -108,6 +108,13 @@ Workstations
     <tr>
 <table>
 
+**Purpose**
+
+- Standard Workstations OU contains user-facing endpoints.
+- Admin Workstations OU contains privileged administrative systems.
+- Separate OUs allow distinct Group Policies and authorization controls to be applied based on workstation role.
+- This design supports administrative workstation isolation and least-privilege access principles.
+
 <br>
 
 ## Project Documentation
