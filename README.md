@@ -42,7 +42,6 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 
 ### Lab Environment
 
-
 | Component | Technology |
 |------------|------------|
 | Hypervisor | Proxmox VE |
