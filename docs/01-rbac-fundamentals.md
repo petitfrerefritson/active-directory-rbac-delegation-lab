@@ -24,20 +24,20 @@ Problems with direct permission assignments include:
 
 Instead of assigning permissions directly to users, permissions are assigned to groups.
 
-<h4>Example Design</h4>
+#### Example Design
 
 Global Security Group
-    • GG_Helpdesk
+- GG_Helpdesk
 
 Domain Local Security Group
-    • DL_Workstation_RDP
+- DL_Workstation_RDP
 
 Configuration
-    1. Add Help Desk users to GG_Helpdesk
-    2. Add GG_Helpdesk as a member of DL_Workstation_RDP
-    3. Grant Remote Desktop permissions to DL_Workstation_RDP
+- 1. Add Help Desk users to GG_Helpdesk
+- 2. Add GG_Helpdesk as a member of DL_Workstation_RDP
+- 3. Grant Remote Desktop permissions to DL_Workstation_RDP
 
-Access Flow
+#### Access Flow
 
 User → GG_Helpdesk → DL_Workstation_RDP → Remote Desktop Permission
 
