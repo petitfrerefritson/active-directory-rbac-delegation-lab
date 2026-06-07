@@ -108,13 +108,15 @@ Workstations
 
 
 
-Global Security Groups
+Global Security Groups:
+
 GG_HELPDESK
 GG_INFRA_ADMIN
 
-<br>
 
-Domain Local Groups
+
+Domain Local Groups:
+
 DL_WORKSTATION_RDP
 DL_ADMIN_WORKSTATION_RDP
 
