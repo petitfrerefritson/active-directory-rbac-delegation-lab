@@ -124,7 +124,7 @@ Resource
 <table>
     <tr>
         <td align="center">
-            <img src="screenshots/STDWorkstationOU.png" width="450">
+            <img src="screenshots/STD Workstation OU.png" width="450">
             <b>Standard Workstations OU</b>
         </td>
         <td align="center">
