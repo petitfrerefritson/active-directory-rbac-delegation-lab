@@ -27,6 +27,33 @@ The objective was to create a scalable and secure permission model that separate
 
 ---
 
+<br>
+
+Business Problem
+
+In many organizations, permissions are assigned directly to users, creating administrative overhead, inconsistent access controls, and increased risk of permission creep.
+
+This project demonstrates how Role-Based Access Control (RBAC) can be implemented in Active Directory using Microsoft's AGDLP methodology to provide scalable, auditable, and least-privilege access management.
+
+The lab specifically focuses on controlling Remote Desktop access to standard and privileged workstations while maintaining clear separation between identity, policy, and permissions
+
+<br
+
+## Lab Environment
+
+| Component | Technology |
+|------------|------------|
+| Hypervisor | Proxmox VE |
+| Domain Controller | Windows Server 2025 |
+| Domain | darkhorse.internal |
+| Management Workstation | MGMT01 |
+| Standard Workstation | WS-TEST01 |
+| Directory Service | Active Directory Domain Services (AD DS) |
+| Policy Management | Group Policy |
+| Access Model | AGDLP |
+| Authorization Method | Security Groups |
+
+
 ## Technologies Used
 
 - Windows Server 2025
