@@ -40,7 +40,7 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 
 <br>
 
-### Lab Environment
+## Lab Environment
 
 | Component | Technology |
 |------------|------------|
