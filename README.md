@@ -5,7 +5,6 @@
 This project demonstrates the implementation of enterprise Role-Based Access Control (RBAC) within Active Directory using:
 
 <br>
-<br>
 
 
 
@@ -75,7 +74,6 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 - Windows Firewall
 - AGDLP
 
----
 <br>
 <br>
 
@@ -175,7 +173,6 @@ Resource
 - OU Design
 - Delegated Administration
 
----
 <br>
 
 ### Project Documentation
