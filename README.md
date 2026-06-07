@@ -138,20 +138,6 @@ Resource
 
 <br>
 
-### Key Lessons Learned
-
-<br>
-
-- OUs organize policy, not permissions.
-- Security Groups determine authorization.
-- AGDLP creates scalable permission chains.
-- Group Policy configuration and authorization should be separated.
-- OU inheritance directly impacts GPO application.
-- "Update" and "Replace" behave differently within Group Policy Preferences.
-- Least privilege is easier to enforce when permissions are assigned through Domain Local groups.
-
-<br>
-
 ### Key Concepts
 
 <br>
@@ -188,6 +174,20 @@ Resource
 - Access Control
 - Windows Administration
 - Troubleshooting
+
+<br>
+
+### Key Lessons Learned
+
+<br>
+
+- OUs organize policy, not permissions.
+- Security Groups determine authorization.
+- AGDLP creates scalable permission chains.
+- Group Policy configuration and authorization should be separated.
+- OU inheritance directly impacts GPO application.
+- "Update" and "Replace" behave differently within Group Policy Preferences.
+- Least privilege is easier to enforce when permissions are assigned through Domain Local groups.
 
 <br>
 
