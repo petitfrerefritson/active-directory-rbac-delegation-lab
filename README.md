@@ -32,7 +32,7 @@ The objective was to create a scalable and secure permission model that separate
 <p>
 <img src="/screenshots/Active Directory RBAC architecture overview.png" align="center">
 </p>
----
+
 
 ## Key Concepts
 
