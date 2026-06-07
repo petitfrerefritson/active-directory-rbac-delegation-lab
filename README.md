@@ -43,7 +43,7 @@ The objective was to create a scalable and secure permission model that separate
 - [Skills Demonstrated](#skills-demonstrated)
 - [Key Lessons Learned](#key-lessons-learned)
 
-
+<hr>
 <br>
 
 <p align="center">
