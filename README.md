@@ -4,11 +4,8 @@
 
 This project demonstrates the implementation of enterprise Role-Based Access Control (RBAC) within Active Directory using:
 
-![Windows Server](https://img.shields.io/badge/Windows%20Server-2025-blue)
-![Active Directory](https://img.shields.io/badge/Active%20Directory-RBAC-red)
-![Group Policy](https://img.shields.io/badge/Group%20Policy-GPO-purple)
-![IAM](https://img.shields.io/badge/IAM-AGDLP-green)
 <br>
+
 
 
 - [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
@@ -19,8 +16,14 @@ This project demonstrates the implementation of enterprise Role-Based Access Con
 - [Lessons Learned](docs/06-lessons-learned.md)
 <br>
 
-
 The objective was to create a scalable and secure permission model that separates identity, policy, and authorization while following least privilege principles.
+
+<br>
+
+![Windows Server](https://img.shields.io/badge/Windows%20Server-2025-blue)
+![Active Directory](https://img.shields.io/badge/Active%20Directory-RBAC-red)
+![Group Policy](https://img.shields.io/badge/Group%20Policy-GPO-purple)
+![IAM](https://img.shields.io/badge/IAM-AGDLP-green)
 
 ---
 
