@@ -36,7 +36,7 @@ The objective was to create a scalable and secure permission model that separate
 <br>
 <br>
 
-## Business Problem
+### Business Problem
 
 In many organizations, permissions are assigned directly to users, creating administrative overhead, inconsistent access controls, and increased risk of permission creep.
 
@@ -47,7 +47,7 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 <br>
 <br
 
-## Lab Environment
+### Lab Environment
 
 | Component | Technology |
 |------------|------------|
@@ -64,7 +64,7 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 <br>
 <br>
 
-## Technologies Used
+### Technologies Used
 
 - Windows Server 2025
 - Active Directory Domain Services
@@ -79,7 +79,7 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 <br>
 <br>
 
-## Architecture
+### Architecture
 
 <br>
 <br>
@@ -91,19 +91,21 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 <br>
 <br>
 
-## Architecture Highlights
+### Architecture Highlights
 
 <br>
 <br>
 
-Organizational Units
+### Organizational Units
 
+```text
 Workstations
 ├── Standard
 │   └── WS-TEST01
 │
 └── Admin Workstations
     └── MGMT01
+```
 
 <br>
 
@@ -146,7 +148,7 @@ Validation Results
 
 <br>
 
-## Key Lessons Learned
+### Key Lessons Learned
 
 <br>
 
@@ -158,7 +160,7 @@ Validation Results
 - "Update" and "Replace" behave differently within Group Policy Preferences.
 - Least privilege is easier to enforce when permissions are assigned through Domain Local groups.
 
-## Key Concepts
+### Key Concepts
 
 - RBAC
 - AGDLP
@@ -169,7 +171,7 @@ Validation Results
 
 ---
 
-## Project Documentation
+### Project Documentation
 
 - RBAC Fundamentals
 - OU Design
@@ -180,7 +182,7 @@ Validation Results
 
 ---
 
-## Skills Demonstrated
+### Skills Demonstrated
 
 - Active Directory Administration
 - Group Policy Management
