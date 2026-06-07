@@ -29,7 +29,6 @@ The objective was to create a scalable and secure permission model that separate
 <br>
 <br>
 <br>
-<br>
 
 ### Business Problem
 
