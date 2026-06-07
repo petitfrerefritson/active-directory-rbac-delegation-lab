@@ -16,8 +16,6 @@ This project demonstrates the implementation of enterprise Role-Based Access Con
 - [Lessons Learned](docs/06-lessons-learned.md)
 
 <br>
-<br>
-
 The objective was to create a scalable and secure permission model that separates identity, policy, and authorization while following least privilege principles.
 
 <br>
