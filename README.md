@@ -83,6 +83,25 @@ Validated through functional testing and group membership removal.
 
 Implementation Screenshots
 
+## Organizational Unit Structure
+
+The environment was organized using separate Organizational Units to distinguish standard workstations from privileged administrative workstations.
+
+```text
+Workstations
+├── Standard
+│   └── WS-TEST01
+│
+└── Admin Workstations
+    └── MGMT01
+```
+
+<p align="center">
+    <img src="screenshot/STD Workstation OU.png">
+    <img src="screenshot/ADM Workstation OU.png" >
+ </p>
+
+
 <br>
 
 ## Project Documentation
