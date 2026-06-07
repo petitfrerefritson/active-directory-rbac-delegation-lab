@@ -77,19 +77,24 @@ The lab specifically focuses on controlling Remote Desktop access to standard an
 <br>
 
 Architecture Highlights
+<br>
 Organizational Units
+
 Workstations
 ├── Standard
 │   └── WS-TEST01
 │
 └── Admin Workstations
     └── MGMT01
+<br>
 Global Security Groups
 GG_HELPDESK
 GG_INFRA_ADMIN
+<br>
 Domain Local Groups
 DL_WORKSTATION_RDP
 DL_ADMIN_WORKSTATION_RDP
+<br>
 AGDLP Flow
 User
  ↓
@@ -100,14 +105,27 @@ Domain Local Group
 Permission
  ↓
 Resource
-
+<br>
 Validation Results
-
+<br>
 | Test | Expected Result | Outcome|
 |------|-----------------|--------|
-|Helpdesk → WS-TEST01 | RDP Allowed | PASS|
-|Helpdesk → MGMT01 | RDP Denied | PASS|
+| Helpdesk → WS-TEST01 | RDP Allowed | PASS |
+| Helpdesk → MGMT01 | RDP Denied | PASS |
+| Infra Admin → WS-TEST01 | RDP Allowed | PASS |
+| Infra Admin → MGMT01 | RDP Allowed | PASS |
+| Remove Group Membership | Access Revoked | PASS |
+<br>
 
+Key Lessons Learned
+<br>
+OUs organize policy, not permissions.
+Security Groups determine authorization.
+AGDLP creates scalable permission chains.
+Group Policy configuration and authorization should be separated.
+OU inheritance directly impacts GPO application.
+"Update" and "Replace" behave differently within Group Policy Preferences.
+Least privilege is easier to enforce when permissions are assigned through Domain Local groups.
 
 ## Key Concepts
 
