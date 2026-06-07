@@ -1,14 +1,18 @@
 # Role-Based Access Control (RBAC) Fundamentals
 
 
-Overview
+## Overview
+
 Role-Based Access Control (RBAC) is an access management model that grants permissions based on a user's job function rather than assigning permissions directly to individual user accounts.
 In an enterprise environment, users are placed into security groups that represent their organizational role. These groups are then granted access to resources through additional permission groups, creating a scalable and manageable access control structure.
 This approach follows the principle of least privilege by ensuring users receive only the permissions required to perform their job duties.
 
-Business Problem
+## Business Problem
+
 Consider a Help Desk team responsible for providing remote support to employee workstations.
+
 A poorly designed environment might grant Remote Desktop access directly to each Help Desk technician. As the organization grows, managing permissions at the individual user level becomes difficult, time-consuming, and prone to mistakes.
+
 Problems with direct permission assignments include:
     • Increased administrative overhead
     • Difficult auditing and reporting
@@ -16,32 +20,48 @@ Problems with direct permission assignments include:
     • Inconsistent access control
     • Greater likelihood of configuration errors
 
-RBAC Solution
+## RBAC Solution
+
 Instead of assigning permissions directly to users, permissions are assigned to groups.
+
 Example Design
+
 Global Security Group
     • GG_Helpdesk
+
 Domain Local Security Group
     • DL_Workstation_RDP
+
 Configuration
     1. Add Help Desk users to GG_Helpdesk
     2. Add GG_Helpdesk as a member of DL_Workstation_RDP
     3. Grant Remote Desktop permissions to DL_Workstation_RDP
+
 Access Flow
+
 User → GG_Helpdesk → DL_Workstation_RDP → Remote Desktop Permission
+
 This creates a clear chain of trust that is easy to understand and maintain.
 
 Why Use a Domain Local Group?
+
 Separating job roles from permissions provides several advantages:
+
 Better Visibility
+
 The purpose of each group becomes immediately obvious.
+
 Examples:
-Group	Purpose
-GG_Helpdesk	Represents Help Desk personnel
-DL_Workstation_RDP	Represents RDP access to workstations
-DL_Reset_Passwords	Represents password reset permissions
-DL_Local_Admin_Workstations	Represents local administrator rights
-Easier Auditing
+
+| Group | Purpose |
+|-------|---------|
+| GG_Helpdesk |	Represents Help Desk personnel |
+| DL_Workstation_RDP | Represents RDP access to workstations |
+| DL_Reset_Passwords| Represents password reset permissions |
+| DL_Local_Admin_Workstations | Represents local administrator rights |
+
+#### Easier Auditing
+
 Administrators can quickly determine:
     • Who has access
     • Why they have access
