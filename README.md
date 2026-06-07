@@ -96,9 +96,11 @@ Workstations
     └── MGMT01
 ```
 
-<p align="center">
-    <img src="screenshots/STD Workstation OU.png" width="900">
-    <img src="screenshots/ADM Workstation OU.png" width="900" >
+<p align="left">
+    <img src="screenshots/STD Workstation OU.png" width="700">
+</p>
+<p>
+    <img src="screenshots/ADM Workstation OU.png" width="700" >
  </p>
 
 
