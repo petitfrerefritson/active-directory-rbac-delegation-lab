@@ -63,26 +63,37 @@ Examples:
 #### Easier Auditing
 
 Administrators can quickly determine:
-    • Who has access
-    • Why they have access
-    • Which business role requires that access
-Simplified Management
+
+- Who has access
+- Why they have access
+- Which business role requires that access
+
+#### Simplified Management
+
 When a new Help Desk technician joins:
-    • Add them to GG_Helpdesk
-    • They automatically inherit all Help Desk permissions
+
+- Add them to GG_Helpdesk
+- They automatically inherit all Help Desk permissions
+
 When a technician leaves:
-    • Remove them from GG_Helpdesk
-    • All inherited permissions are removed automatically
+
+- Remove them from GG_Helpdesk
+- All inherited permissions are removed automatically
+
 No individual resource permissions need to be modified.
 
-AGDLP Model
+#### AGDLP Model
+
 This lab follows Microsoft's AGDLP methodology:
+
 A → G → DL → P
-    • A = Accounts (Users)
-    • G = Global Groups (Job Roles)
-    • DL = Domain Local Groups (Resource Permissions)
-    • P = Permissions
+- A = Accounts (Users)
+- G = Global Groups (Job Roles)
+- DL = Domain Local Groups (Resource Permissions)
+- P = Permissions
+
 Example
+
 Fritson
     ↓
 GG_Helpdesk
@@ -90,6 +101,7 @@ GG_Helpdesk
 DL_Workstation_RDP
     ↓
 Remote Desktop Access
+
 This model provides a scalable and enterprise-friendly approach to access management.
 Validation
 To verify the RBAC configuration:
