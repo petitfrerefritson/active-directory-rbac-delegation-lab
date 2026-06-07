@@ -191,12 +191,11 @@ Resource
 - Lessons Learned
 
 <br>
----
 <br>
 
 ### Skills Demonstrated
-
 <br>
+
 - Active Directory Administration
 - Group Policy Management
 - RBAC Design
