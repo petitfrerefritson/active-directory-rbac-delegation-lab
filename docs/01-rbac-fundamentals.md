@@ -92,7 +92,7 @@ A → G → DL → P
 - DL = Domain Local Groups (Resource Permissions)
 - P = Permissions
 
-Example
+Example:
 
 Fritson
 ↓
