@@ -105,9 +105,8 @@ Workstations
 │
 └── Admin Workstations
     └── MGMT01
-```
 
-<br>
+
 
 Global Security Groups
 GG_HELPDESK
@@ -119,9 +118,7 @@ Domain Local Groups
 DL_WORKSTATION_RDP
 DL_ADMIN_WORKSTATION_RDP
 
-<br>
 
-```text
 AGDLP Flow
 
 User
