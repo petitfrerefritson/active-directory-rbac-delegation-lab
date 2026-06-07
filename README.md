@@ -162,6 +162,8 @@ Validation Results
 - "Update" and "Replace" behave differently within Group Policy Preferences.
 - Least privilege is easier to enforce when permissions are assigned through Domain Local groups.
 
+<br>
+
 ### Key Concepts
 
 - RBAC
