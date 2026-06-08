@@ -23,6 +23,41 @@ The OU structure was designed to:
 
 <br>
 
+## Design Summary
+
+The environment was designed using separate Organizational Units for standard and privileged workstations. This approach enables different Group Policies, administrative controls, and security baselines to be applied according to workstation role.
+
+Rather than assigning permissions directly to users, authorization is managed through Security Groups following Microsoft's AGDLP methodology, improving scalability and maintainability.
+
+<br>
+
+## Enterprise Relevance
+
+This design mirrors common enterprise Active Directory practices where privileged administrative systems are separated from standard user endpoints.
+
+Examples include:
+
+- Privileged Access Workstations (PAWs)
+- Administrative Jump Boxes
+- Tiered Administration Models
+- Security Baseline Segmentation
+
+The separation of administrative and non-administrative systems reduces attack surface and limits lateral movement opportunities.
+
+<br>
+
+## Design Questions
+
+Before implementing this structure, the following questions had to be answered:
+
+- Should privileged systems receive the same policies as standard workstations?
+- How can administrative systems be isolated from user systems?
+- How should Group Policies be targeted?
+- How will future workstations be added without redesigning the OU structure?
+- How can authorization be separated from policy configuration?
+
+<br>
+
 ## Organizational Unit Structure
 ```test
 DARKHORSE.INTERNAL
