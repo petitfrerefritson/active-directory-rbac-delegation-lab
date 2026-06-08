@@ -34,6 +34,7 @@ Workstations
     └── MGMT01
 ```
 <br>
+
 ## Design Rationale
 
 Standard Workstations OU
