@@ -89,13 +89,18 @@ Key benefits include:
 
 ## Implementation Evidence
 
-<p align="center">
-<img src="../screenshots/STD Workstation OU.png" width= "500">
-</p>
-
-<p align="center">
-<img src="../screenshots/ADM Workstation OU.png" width= "500">
-</p>
+<table>
+    <tr>
+        <td align="center">
+            <img src="../screenshots/STD Workstation OU.png" width="450">
+            <b>Standard Workstations OU</b>
+        </td>
+        <td align="center">
+            <img src="../screenshots/ADM Workstation OU.png" width="450" >
+            <b>Admin Workstations OU</b>
+        <td>
+    <tr>
+<table>
 
 <br>
 
