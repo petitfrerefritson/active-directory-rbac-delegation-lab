@@ -90,11 +90,11 @@ Key benefits include:
 ## Implementation Evidence
 
 <p align="center">
-<img src="screenshots/STD Workstation OU.png" width= "500">
+<img src="../screenshots/STD Workstation OU.png" width= "500">
 </p>
 
 <p align="center">
-<img src="screenshots/ADM Workstation OU.png" width= "500">
+<img src="../screenshots/ADM Workstation OU.png" width= "500">
 </p>
 
 <br>
