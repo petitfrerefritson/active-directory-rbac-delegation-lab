@@ -94,7 +94,7 @@ Key benefits include:
 </p>
 
 <p align="center">
-<img src="screenshots/ADN Workstation OU.png" width= "500">
+<img src="screenshots/ADM Workstation OU.png" width= "500">
 </p>
 
 <br>
