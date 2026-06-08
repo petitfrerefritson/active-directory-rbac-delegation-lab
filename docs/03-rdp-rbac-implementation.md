@@ -5,6 +5,7 @@ This structure was chosen because it increases visibiliy allowing administrators
 
 In addition to increasing permission visibility it effectively reduces permission creep by only adding users to their assigned roles. Roles that have their permissons managed by a Domain Local Group. Making the administrative overhead when onboarding and offboarding clients lower. 
 
+<br>
 ```text
 Accounts
 ↓
