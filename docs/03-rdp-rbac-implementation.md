@@ -36,6 +36,8 @@ The solution needed to:
 - Support future growth without redesigning permissions
 - Follow Microsoft's AGDLP model 
 
+<br>
+
 ## Design
 
 #### Accounts
@@ -48,6 +50,8 @@ Example:
 - Fritson → GG_HELPDESK
 - Infrastructure Administrator → GG_INFRA_ADMIN
 
+<br>
+
 #### Global Groups
 
 Global Security Groups represent business roles within the organization.
@@ -59,6 +63,8 @@ Examples include:
 - GG_SECURITY_ADMIN
 
 These groups contain users who share the same responsibilities and access requirements.
+
+<br>
 
 #### Domain Local Groups
 
@@ -85,4 +91,3 @@ Remote Desktop Access to Standard Workstations
 ```
 
 This design separates identity from authorization, improving scalability and maintainability.
-
