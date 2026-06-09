@@ -27,7 +27,7 @@ This approach simplifies access management, improves auditing, and reduces opera
 
 ### Requirements
 
-The implementation needed to:
+In order to:
 - Support Role-Based Access Control (RBAC)
 - Avoid assigning permissions directly to users
 - Simplify onboarding and offboarding processes
@@ -35,7 +35,7 @@ The implementation needed to:
 - Support future growth without redesigning access controls
 - Follow Microsoft's AGDLP methodology
 
-This implementation requires an Active Directory Domain Services (AD DS) environment.
+You'll need an Active Directory Domain Services (AD DS) environment.
 
 ## Design
 
