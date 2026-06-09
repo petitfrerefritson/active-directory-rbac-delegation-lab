@@ -23,7 +23,6 @@ Resources
 
 This approach simplifies access management, improves auditing, and reduces operational complexity by managing permissions through security groups rather than individual user accounts.
 
-<br>
 
 ## Requirements
 
@@ -36,7 +35,6 @@ The solution needed to:
 - Support future growth without redesigning permissions
 - Follow Microsoft's AGDLP model 
 
-<br>
 
 ## Design
 
@@ -50,7 +48,6 @@ Example:
 - Fritson → GG_HELPDESK
 - Infrastructure Administrator → GG_INFRA_ADMIN
 
-<br>
 
 #### Global Groups
 
@@ -64,7 +61,6 @@ Examples include:
 
 These groups contain users who share the same responsibilities and access requirements.
 
-<br>
 
 #### Domain Local Groups
 
