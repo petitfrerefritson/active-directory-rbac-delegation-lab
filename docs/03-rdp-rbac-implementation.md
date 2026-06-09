@@ -27,15 +27,14 @@ This approach simplifies access management, improves auditing, and reduces opera
 
 ### Requirements
 
-In order to:
-- Support Role-Based Access Control (RBAC)
-- Avoid assigning permissions directly to users
-- Simplify onboarding and offboarding processes
-- Improve permission auditing and visibility
-- Support future growth without redesigning access controls
-- Follow Microsoft's AGDLP methodology
+The solution needed to:
 
-You'll need an Active Directory Domain Services (AD DS) environment.
+- Allow Helpdesk staff to access standard workstations
+- Prevent Helpdesk staff from accessing administrative workstations
+- Allow Infrastructure Administrators to access both workstation tiers
+- Avoid assigning permissions directly to user accounts
+- Support future growth without redesigning permissions
+- Follow Microsoft's AGDLP model 
 
 ## Design
 
