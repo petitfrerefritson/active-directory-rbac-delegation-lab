@@ -40,6 +40,8 @@ The solution needed to:
 
 ## Design
 
+
+
 #### Accounts
 
 User accounts represent individual identities within Active Directory.
@@ -90,6 +92,7 @@ Remote Desktop Access to Standard Workstations
 
 This design separates identity from authorization, improving scalability and maintainability.
 
+<br>
 
 ## Implementation
 
