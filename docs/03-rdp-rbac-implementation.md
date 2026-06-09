@@ -60,7 +60,7 @@ Examples include:
 
 These groups contain users who share the same responsibilities and access requirements.
 
-Domain Local Groups
+#### Domain Local Groups
 
 Domain Local Security Groups own permissions to resources.
 
