@@ -1,4 +1,5 @@
-## Problem
+
+# Problem
 
 Assigning permissions directly to user accounts creates administrative overhead, increases the likelihood of permission creep, and makes auditing more difficult as environments grow.
 
@@ -19,7 +20,6 @@ Permissions
 ↓
 Resources
 ```
-
 
 This approach simplifies access management, improves auditing, and reduces operational complexity by managing permissions through security groups rather than individual user accounts.
 
@@ -42,7 +42,7 @@ The solution needed to:
 
 <br>
 
-#### Accounts
+### Accounts
 
 User accounts represent individual identities within Active Directory.
 
@@ -65,7 +65,6 @@ Examples include:
 - GG_SECURITY_ADMIN
 
 These groups contain users who share the same responsibilities and access requirements.
-
 
 #### Domain Local Groups
 
