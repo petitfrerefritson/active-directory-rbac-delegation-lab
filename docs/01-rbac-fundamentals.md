@@ -139,7 +139,7 @@ Permissions should be assigned to groups, not users.
 - RBAC simplifies administration, auditing, and access reviews.
 - Enterprise environments rely heavily on group-based access management to reduce complexity and improve security.
 
-# Organizational Units, Groups, Identity, Policy, and Permissions
+## Organizational Units, Groups, Identity, Policy, and Permissions
 
 ### Overview
 
