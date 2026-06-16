@@ -40,7 +40,7 @@ The solution needed to:
 
 ## Design
 
-
+<br>
 
 #### Accounts
 
@@ -49,15 +49,16 @@ User accounts represent individual identities within Active Directory.
 Users are assigned to Global Security Groups based on their job function or administrative responsibilities.
 
 Example:
+
 - Fritson → GG_HELPDESK
 - Infrastructure Administrator → GG_INFRA_ADMIN
-
 
 #### Global Groups
 
 Global Security Groups represent business roles within the organization.
 
 Examples include:
+
 - GG_HELPDESK
 - GG_INFRA_ADMIN
 - GG_SERVER_ADMIN
@@ -73,6 +74,7 @@ Domain Local Security Groups own permissions to resources.
 Rather than assigning permissions directly to users or Global Groups, permissions are assigned to Domain Local Groups.
 
 Examples include:
+
 - DL_Workstation_RDP
 - DL_Admin_Workstation_RDP
 - DL_Server_RDP
@@ -112,6 +114,7 @@ This policy was linked to the parent Workstations OU and was responsible for con
 operating system to support Remote Desktop.
 
 Configuration included:
+
 - Enable Remote Desktop
 - Allow Remote Desktop through Windows Firewall
 - Configure required RDP settings
