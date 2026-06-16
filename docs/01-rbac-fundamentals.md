@@ -1,5 +1,5 @@
-# Role-Based Access Control (RBAC) Fundamentals
 
+# Role-Based Access Control (RBAC) Fundamentals
 
 ## Overview
 
@@ -24,15 +24,18 @@ Problems with direct permission assignments include:
 
 Instead of assigning permissions directly to users, permissions are assigned to groups.
 
-#### Example Design
+### Example Design
 
 Global Security Group
+
 - GG_Helpdesk
 
 Domain Local Security Group
+
 - DL_Workstation_RDP
 
 Configuration
+
 - 1. Add Help Desk users to GG_Helpdesk
 - 2. Add GG_Helpdesk as a member of DL_Workstation_RDP
 - 3. Grant Remote Desktop permissions to DL_Workstation_RDP
@@ -54,10 +57,10 @@ The purpose of each group becomes immediately obvious.
 Examples:
 
 | Group | Purpose |
-|-------|---------|
-| GG_Helpdesk |	Represents Help Desk personnel |
+| ----- | ------- |
+| GG_Helpdesk | Represents Help Desk personnel |
 | DL_Workstation_RDP | Represents RDP access to workstations |
-| DL_Reset_Passwords| Represents password reset permissions |
+| DL_Reset_Passwords | Represents password reset permissions |
 | DL_Local_Admin_Workstations | Represents local administrator rights |
 
 #### Easier Auditing
@@ -87,12 +90,14 @@ No individual resource permissions need to be modified.
 This lab follows Microsoft's AGDLP methodology:
 
 A → G → DL → P
+
 - A = Accounts (Users)
 - G = Global Groups (Job Roles)
 - DL = Domain Local Groups (Resource Permissions)
 - P = Permissions
 
 Example:
+
 ```text
 Fritson
 ↓
@@ -102,37 +107,37 @@ DL_Workstation_RDP
 ↓
 Remote Desktop Access
 ```
+
 This model provides a scalable and enterprise-friendly approach to access management.
 Validation
 
 To verify the RBAC configuration:
 
 - 1. Create a test Help Desk user
-- 2. Add the user to GG_Helpdesk
-- 3. Confirm GG_Helpdesk is a member of DL_Workstation_RDP
-- 4. Log in as the test user
-- 5. Attempt to RDP to a workstation
-- 6. Verify access is successful
+- 1. Add the user to GG_Helpdesk
+- 1. Confirm GG_Helpdesk is a member of DL_Workstation_RDP
+- 1. Log in as the test user
+- 1. Attempt to RDP to a workstation
+- 1. Verify access is successful
 
 Then:
 
 - 1. Remove the user from GG_Helpdesk
-- 2. Force group membership refresh
-- 3. Attempt RDP again
-- 4. Verify access is denied
+- 1. Force group membership refresh
+- 1. Attempt RDP again
+- 1. Verify access is denied
 
 This confirms permissions are being inherited through group membership rather than direct assignment.
 
 Key Takeaways
 
 Permissions should be assigned to groups, not users.
+
 - Global Groups represent job roles.
 - Domain Local Groups represent resource permissions.
 - AGDLP creates a clear and scalable chain of trust.
 - RBAC simplifies administration, auditing, and access reviews.
 - Enterprise environments rely heavily on group-based access management to reduce complexity and improve security.
-
-
 
 # Organizational Units, Groups, Identity, Policy, and Permissions
 
@@ -158,6 +163,7 @@ In simple terms, an OU answers the question:
 "How should these accounts behave?"
 
 Examples of behavior controlled through OUs include:
+
 - Password policies
 - Administrative templates
 - Security restrictions
@@ -176,6 +182,7 @@ Security Groups answer a different question:
 "What resources should these accounts be allowed to access?"
 
 Examples include:
+
 - Access to file shares
 - Local administrator rights
 - Remote Desktop access
@@ -190,6 +197,7 @@ Permissions should be assigned through groups, not OUs.
 ### The Common Mistake
 
 A common beginner design looks something like this:
+
 ```text
 Admins
 ├── Infrastructure Admins OU
@@ -208,6 +216,7 @@ You end up managing multiple OUs that all receive nearly identical Group Policy 
 ### A Better Design
 
 Instead, administrative accounts can be placed into a single administrative OU:
+
 ```text
 User Accounts
 │
@@ -222,6 +231,7 @@ User Accounts
 The OU applies the security controls and hardening policies appropriate for administrative accounts.
 
 Examples:
+
 - Deny web browsing
 - Restrict software installation
 - Enhanced auditing
@@ -238,6 +248,7 @@ The key lesson is understanding the difference between identity and permissions.
 Identity describes who the account represents.
 
 Examples:
+
 - fritson.infra
 - fritson.server
 - fritson.security
@@ -250,6 +261,7 @@ Because they are administrative identities, they belong in the same Admin Accoun
 #### Permissions
 
 Permissions describe what the account is allowed to do.
+
 ```text
 Examples:
     • GG_INFRA_ADMIN
@@ -261,6 +273,7 @@ Examples:
 These groups determine access to resources.
 
 For example:
+
 ```text
 fritson.infra
         ↓
@@ -286,6 +299,7 @@ Mental Model
 A useful way to think about Active Directory is:
 Organizational Units
 Determine:
+
 - Policy
 - Management
 - Delegation
@@ -294,11 +308,13 @@ Determine:
 Security Groups
 
 Determine:
+
 - Access
 - Permissions
 - Resource Authorization
 
 Key Takeaways
+
 - OUs control how an account behaves.
 - Groups control what an account can access.
 - OUs should be organized around policy requirements.
@@ -307,6 +323,7 @@ Key Takeaways
 - The question for an OU is:
 
 "What policies should apply to this account?"
+
 - The question for a Security Group is:
 
 "What permissions should this account have?"
