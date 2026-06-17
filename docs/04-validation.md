@@ -94,7 +94,7 @@ Future implementation of AD CS and certificate auto-enrollment will allow admini
 
 gpresult /r
 
-<img src="../screenshots/InfraAdminGPresult.png">
+<img src="../screenshots/HelpdeskGpresultWS-test01.png">
 
 ### Result
 
