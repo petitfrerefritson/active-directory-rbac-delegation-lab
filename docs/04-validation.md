@@ -34,6 +34,7 @@ The connection was authorized through RBAC and Group Policy, however the worksta
 This occurred because the environment had not yet implemented Active Directory Certificate Services (AD CS).
 
 Future implementation of AD CS and certificate auto-enrollment will allow administrative workstations to present certificates issued by a trusted enterprise Certification Authority, eliminating this warning.
+
 ---
 
 ## Test 2 - Helpdesk Access to Administrative Workstation
