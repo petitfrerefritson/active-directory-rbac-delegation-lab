@@ -70,7 +70,7 @@ Infrastructure Administrators can RDP to MGMT01.
 
 ### Evidence
 
-<img src="../screenshots/MGMT01RDPLOGIN.png">
+<img src="../screenshots/MGMT01RDPLOGIN.png" width="450">
 
 ### Result
 
@@ -94,7 +94,7 @@ Future implementation of AD CS and certificate auto-enrollment will allow admini
 
 gpresult /r
 
-<img src="../screenshots/HelpdeskGpresultWS-test01.png">
+<img src="../screenshots/HelpdeskGpresultWS-test01.png" width="450">
 
 ### Result
 
@@ -108,7 +108,7 @@ PASS
 
 net localgroup
 
-<img src="../screenshots/WS-TEST-localgroup.png">
+<img src="../screenshots/WS-TEST-localgroup.png" width="450">
 
 ### Result
 
