@@ -233,6 +233,7 @@ This design separates identity from authorization and simplifies permission mana
 In this lab, GG_HELPDESK is nested into DL_Workstation_RDP, while GG_INFRA_ADMIN is nested into DL_Admin_Workstation_RDP, demonstrating how role-based access is delegated without assigning permissions directly to users.
 
 ## Technologies Used
+
 - Windows Server 2025
 - Active Directory Domain Services
 - Group Policy
@@ -256,6 +257,7 @@ In this lab, GG_HELPDESK is nested into DL_Workstation_RDP, while GG_INFRA_ADMIN
 <br>
 
 ## Key Concepts
+
 - RBAC
 - AGDLP
 - Least Privilege
@@ -266,6 +268,7 @@ In this lab, GG_HELPDESK is nested into DL_Workstation_RDP, while GG_INFRA_ADMIN
 <br>
 
 ## Skills Demonstrated
+
 - Active Directory Administration
 - Group Policy Management
 - RBAC Design
