@@ -393,5 +393,3 @@ Always verify time settings before troubleshooting authentication problems.
 * Kerberos depends on accurate time synchronization.
 * AGDLP simplifies troubleshooting by making permission inheritance visible.
 
-```
-```
