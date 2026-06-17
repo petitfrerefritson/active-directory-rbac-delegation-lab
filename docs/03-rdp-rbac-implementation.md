@@ -176,3 +176,11 @@ When a new employee joins the Helpdesk team, administrators only need to add the
 Access is automatically inherited through nested group membership, reducing administrative overhead, simplifying auditing, and preventing permission creep.
 
 This approach scales significantly better than assigning permissions directly to users and mirrors common enterprise Active Directory access management practices.
+
+## Project Documentation
+
+- [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
+- [OU Design](docs/02-ou-design.md)
+- [Validation Testing](docs/04-validation.md)
+- [Troubleshooting](docs/05-troubleshooting.md)
+- [Lessons Learned](docs/06-lessons-learned.md)

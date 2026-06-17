@@ -393,3 +393,10 @@ Always verify time settings before troubleshooting authentication problems.
 * Kerberos depends on accurate time synchronization.
 * AGDLP simplifies troubleshooting by making permission inheritance visible.
 
+## Project Documentation
+
+- [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
+- [OU Design](docs/02-ou-design.md)
+- [RDP Authorization Implementation](docs/03-rdp-rbac-implementation.md)
+- [Validation Testing](docs/04-validation.md)
+- [Lessons Learned](docs/06-lessons-learned.md)

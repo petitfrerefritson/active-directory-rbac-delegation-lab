@@ -263,3 +263,11 @@ It is a framework that combines identity, policy, delegation, authorization, and
 Implementing RBAC using AGDLP demonstrated how enterprise environments separate identity from permissions, configuration from authorization, and administration from resource access.
 
 This project provided practical experience with enterprise Active Directory design principles and established a foundation for future implementations involving AD CS, NPS, 802.1X authentication, PKI, Single Sign-On, and Identity and Access Management solutions.
+
+## Project Documentation
+
+- [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
+- [OU Design](docs/02-ou-design.md)
+- [RDP Authorization Implementation](docs/03-rdp-rbac-implementation.md)
+- [Validation Testing](docs/04-validation.md)
+- [Troubleshooting](docs/05-troubleshooting.md)

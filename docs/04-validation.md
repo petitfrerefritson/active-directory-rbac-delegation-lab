@@ -137,4 +137,10 @@ PASS
 
 PASS
 
+## Project Documentation
 
+- [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
+- [OU Design](docs/02-ou-design.md)
+- [RDP Authorization Implementation](docs/03-rdp-rbac-implementation.md)
+- [Troubleshooting](docs/05-troubleshooting.md)
+- [Lessons Learned](docs/06-lessons-learned.md)

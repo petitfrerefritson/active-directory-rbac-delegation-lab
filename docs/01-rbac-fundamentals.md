@@ -329,3 +329,11 @@ Key Takeaways
 "What permissions should this account have?"
 
 Understanding this distinction is one of the most important concepts in Active Directory design and helps prevent overly complicated OU structures.
+
+## Project Documentation
+
+- [OU Design](docs/02-ou-design.md)
+- [RDP Authorization Implementation](docs/03-rdp-rbac-implementation.md)
+- [Validation Testing](docs/04-validation.md)
+- [Troubleshooting](docs/05-troubleshooting.md)
+- [Lessons Learned](docs/06-lessons-learned.md)

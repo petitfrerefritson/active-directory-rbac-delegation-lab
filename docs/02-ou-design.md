@@ -148,3 +148,11 @@ Through this implementation several important Active Directory concepts became c
 - Group Policy should be linked to OUs rather than individual systems.
 - Separating privileged and non-privileged systems improves security and manageability.
 - OU design should support future growth rather than current requirements alone.
+
+## Project Documentation
+
+- [RBAC Fundamentals](docs/01-rbac-fundamentals.md)
+- [RDP Authorization Implementation](docs/03-rdp-rbac-implementation.md)
+- [Validation Testing](docs/04-validation.md)
+- [Troubleshooting](docs/05-troubleshooting.md)
+- [Lessons Learned](docs/06-lessons-learned.md)
